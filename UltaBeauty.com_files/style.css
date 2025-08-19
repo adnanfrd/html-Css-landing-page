@@ -79,28 +79,7 @@ footer {
   height: 124px;
   margin: 24px 0;
 }
-/*.spinner::before {
-  content: url('https://jyplacements.ddns.net/BannersLanders/1085/assets/brand-spinner.png');
-  position: absolute;
-  top: 42%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}*/
-/* .spinner::after {
-  content: '';
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  animation: 0.6s linear 0s infinite normal none running spinnerRotation;
-  border-radius: 100%;
-  text-indent: -9999px;
-  border-width: 12px;
-  border-style: solid;
-  border-color: rgb(191, 214, 49) rgba(40, 50, 90, 0.15) rgba(40, 50, 90, 0.15);
-  border-image: initial;
-} */
+
 @keyframes spinnerRotation {
   0% {
     -webkit-transform: rotate(0deg);
