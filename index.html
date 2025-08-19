@@ -730,7 +730,7 @@ footer {
 
   // Show the first notification immediately
   const firstItem = notify.send(data[index % data.length]);
-  notify.hide(firstItem, 3000); // Hide after 3s
+  notify.hide(firstItem, 2000); // Hide after 3s
   index++;
 
   // Then every 5s, show a new one and auto-hide after 7.5s
