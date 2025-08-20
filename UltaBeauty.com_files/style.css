@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+/* CUSTOM CSS */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #0f1111;
+}
+h1, h2, .nav-item {
+  font-weight: 600;
+}
+a.nav-link {
+  color: #000 !important;
+}
+nav {
+  box-shadow: 0 0.125rem 0.375rem rgb(0 0 0 / 15%);
+}
+.news-site-nav {
+  background-color: #fff;
+}
+.custom-nav-bg {
+  background-color: #fff;
+}
+footer {
+  box-shadow: 0 -0.125rem 0.375rem rgb(0 0 0 / 15%);
+}
+.text-primary {
+  color: #E26030 !important;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #E26030 !important;
+  border: 1px solid #E26030 !important;
+  color: #fff !important;
+}
+.bg-primary-2 {
+  background: #232F3E;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.question:first-child {
+  display: block;
+}
+.question {
+  display: none;
+}
+#content2, #content3, #content4, #content5 {
+  display: none;
+}
+/* Content 2 */
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.results__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0.25rem;
+  font-weight: 700;
+  display: none;
+}
+.spinner {
+  display: block;
+  line-height: 1;
+  position: relative;
+  color: rgb(17, 17, 17);
+  width: 124px;
+  height: 124px;
+  margin: 24px 0;
+}
+
+@keyframes spinnerRotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.news-primary {
+  color: #E6003D;
+}
+.bg-news-primary {
+  background-color: #E6003D;
+}
+a {
+  color: #E6003D;
+}
+.btn-news-secondary {
+  background-color: #D20F26;
+  color: #fff;
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.gallery img {
+  flex: none;
+  width: 420px; /* Increased width by 40% */
+  height: auto;
+  margin-right: 10px;
+}
+
+.gallery img:last-child {
+  margin-right: 0;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+
+/* Smooth entrance animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pulse animation for CTAs */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Improved typography and spacing */
+h1 {
+    font-size: 2.5rem;
+    color: #E6003D;
+    margin-bottom: 1.5rem;
+}
+
+.first_p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Add eye-catching CTA styling */
+.btn-primary {
+    background: linear-gradient(45deg, #E6003D, #FF4081);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(230, 0, 61, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(230, 0, 61, 0.4);
+}
+
+/* Add progress indicator */
+.progress-bar {
+    height: 6px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    margin: 2rem 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #E6003D, #FF4081);
+    border-radius: 3px;
+    transition: width 0.3s;
+}
+
+@media (max-width: 480px) {
+  .lead {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .img__1 {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        padding: 0.8rem;
+    }
+    
+    .notifications {
+        max-width: 90%;
+        right: 5%;
+    }
+}
